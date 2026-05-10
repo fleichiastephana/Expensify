@@ -43,7 +43,7 @@ header {
 }
 
 .container {
-    width: 340px;
+    width: 380px;
     margin: 12px auto;
 }
 
@@ -159,7 +159,7 @@ select {
 
     position: relative;
 
-    padding: 10px 12px 10px 52px;
+    padding: 10px 12px 10px 48px;
 
     margin: 6px 0;
 
