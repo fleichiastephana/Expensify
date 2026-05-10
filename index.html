@@ -10,34 +10,44 @@
 
 <body>
 
-<header>
+  <header>
     <h2>Expensify - Expense Tracker</h2>
-</header>
+  </header>
 
-<div class="container">
+  <div class="container">
 
     <h4>Starting Balance</h4>
-    <input type="text" id="starting-balance" placeholder="Enter starting balance">
+    <input
+      type="text"
+      id="starting-balance"
+      maxlength="20"
+      placeholder="Enter starting balance"
+    >
 
     <h4>Your Balance</h4>
     <h1 id="balance">Rp0</h1>
 
-    <input type="text" id="budget" placeholder="Set Daily Budget">
+    <input
+      type="text"
+      id="budget"
+      maxlength="20"
+      placeholder="Set Daily Budget"
+    >
 
     <h4>Status: <span id="status">Safe</span></h4>
     <p id="warning"></p>
 
     <div class="inc-exp-container">
 
-        <div>
-            <h4>Income</h4>
-            <p id="money-plus" class="money plus">Rp0</p>
-        </div>
+      <div>
+        <h4>Income</h4>
+        <p id="money-plus" class="money plus">Rp0</p>
+      </div>
 
-        <div>
-            <h4>Expense</h4>
-            <p id="money-minus" class="money minus">Rp0</p>
-        </div>
+      <div>
+        <h4>Expense</h4>
+        <p id="money-minus" class="money minus">Rp0</p>
+      </div>
 
     </div>
 
@@ -51,45 +61,45 @@
 
     <form id="form">
 
-        <div class="form-control">
-            <label for="text">Transaction Name</label>
+      <div class="form-control">
+        <label for="text">Text</label>
 
-            <input
-                type="text"
-                id="text"
-                maxlength="30"
-                placeholder="Enter transaction name..."
-            />
-        </div>
+        <input
+          type="text"
+          id="text"
+          maxlength="25"
+          placeholder="Enter transaction name..."
+        >
+      </div>
 
-        <div class="form-control">
-            <label for="amount">Amount</label>
+      <div class="form-control">
+        <label for="amount">Amount</label>
 
-            <input
-                type="text"
-                id="amount"
-                maxlength="10"
-                inputmode="numeric"
-                placeholder="Enter amount..."
-            />
-        </div>
+        <input
+          type="text"
+          id="amount"
+          maxlength="20"
+          placeholder="Enter amount..."
+        >
+      </div>
 
-        <div class="form-control">
-            <label for="type">Type</label>
+      <div class="form-control">
+        <label for="type">Type</label>
 
-            <select id="type">
-                <option value="expense">Expense (-)</option>
-                <option value="income">Income (+)</option>
-            </select>
-        </div>
+        <select id="type">
+          <option value="expense">Expense (-)</option>
+          <option value="income">Income (+)</option>
+        </select>
+      </div>
 
-        <button class="btn">Add Transaction</button>
+      <button class="btn">Add Transaction</button>
 
     </form>
 
-</div>
+  </div>
 
-<script src="script.js"></script>
+  <script src="script.js"></script>
 
 </body>
+
 </html>
