@@ -9,61 +9,87 @@
 </head>
 
 <body>
-    <header>
-        <h2>Expensify - Expense Tracker</h2>
-    </header>
 
-    <div class="container">
-        <h4>Your Balance</h4>
-        <h1 id="balance">Rp0.00</h1>
+<header>
+    <h2>Expensify - Expense Tracker</h2>
+</header>
 
-        <input type="number" id="budget" placeholder="Set Daily Budget">
+<div class="container">
 
-        <h4>Status: <span id="status">Safe</span></h4>
-        <p id="warning" style="color: #ef7264;"></p>
+    <h4>Starting Balance</h4>
+    <input type="text" id="starting-balance" placeholder="Enter starting balance">
 
-        <div class="inc-exp-container">
-            <div>
-                <h4>Income</h4>
-                <p id="money-plus" class="money plus">Rp0.00</p>
-            </div>
+    <h4>Your Balance</h4>
+    <h1 id="balance">Rp0</h1>
 
-            <div>
-                <h4>Expense</h4>
-                <p id="money-minus" class="money minus">Rp0.00</p>
-            </div>
+    <input type="text" id="budget" placeholder="Set Daily Budget">
+
+    <h4>Status: <span id="status">Safe</span></h4>
+    <p id="warning"></p>
+
+    <div class="inc-exp-container">
+
+        <div>
+            <h4>Income</h4>
+            <p id="money-plus" class="money plus">Rp0</p>
         </div>
 
-        <h3>History</h3>        
-        <ul id="list" class="list"></ul>
-        <p id="empty">No transactions yet</p>
+        <div>
+            <h4>Expense</h4>
+            <p id="money-minus" class="money minus">Rp0</p>
+        </div>
 
-        <h3>Add new transaction</h3>
-
-        <form id="form"> 
-            <div class="form-control">
-                <label for="text">Text</label>
-                <input type="text" id="text" placeholder="Enter name of transaction..." />
-            </div>
-
-            <div class="form-control">
-                <label for="amount">Amount</label>
-                <input type="number" id="amount" placeholder="Enter amount..." />
-            </div>
-
-            <div class="form-control">
-                <label for="type">Type</label>
-                <select id="type">
-                    <option value="expense">Expense (-)</option>
-                    <option value="income">Income (+)</option>
-                </select>
-            </div>
-
-            <button class="btn">Add transaction</button>
-        </form>
     </div>
 
-    <script src="script.js"></script>
-</body>
+    <h3>History</h3>
 
+    <ul id="list" class="list"></ul>
+
+    <p id="empty">No transactions yet</p>
+
+    <h3>Add New Transaction</h3>
+
+    <form id="form">
+
+        <div class="form-control">
+            <label for="text">Transaction Name</label>
+
+            <input
+                type="text"
+                id="text"
+                maxlength="30"
+                placeholder="Enter transaction name..."
+            />
+        </div>
+
+        <div class="form-control">
+            <label for="amount">Amount</label>
+
+            <input
+                type="text"
+                id="amount"
+                maxlength="10"
+                inputmode="numeric"
+                placeholder="Enter amount..."
+            />
+        </div>
+
+        <div class="form-control">
+            <label for="type">Type</label>
+
+            <select id="type">
+                <option value="expense">Expense (-)</option>
+                <option value="income">Income (+)</option>
+            </select>
+        </div>
+
+        <button class="btn">Add Transaction</button>
+
+    </form>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
 </html>
