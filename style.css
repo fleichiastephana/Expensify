@@ -159,7 +159,7 @@ select {
 
     position: relative;
 
-    padding: 10px 12px 10px 75px;
+    padding: 10px 12px 10px 52px;
 
     margin: 6px 0;
 
@@ -193,7 +193,7 @@ select {
     position: absolute;
 
     top: 50%;
-    left: 12px;
+    left: 10px;
 
     transform: translateY(-50%);
 
